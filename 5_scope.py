@@ -1,3 +1,7 @@
+def div():
+    print('='*50)
+
+
 # In python we have two different types of scope. Global scope and local scope
 
 # the scope determines what variables are accessible
@@ -31,4 +35,11 @@ def add_to_library(author, title):
 add_to_library("J.K. Rowling", "Harry Potter and the Deathly Hallows")
 add_to_library("Neil Geiman", "Smoke and Mirrors")
 
-print(books)
+def display_books():
+    for book in books:
+        div()
+        print(f"Title: {book[1]}")
+        print(f"Author: {book[0]}")
+        div()
+
+display_books()
